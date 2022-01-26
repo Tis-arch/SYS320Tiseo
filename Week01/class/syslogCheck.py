@@ -1,8 +1,8 @@
-#was rushing through this portion, installs bugged and got hectic
+#was rushing through this portion, installs bugged and got hectic. I think me installing pylance is partially to blame.
 #Interface to use for searching through system log (.log) files.
 import re
 
-def _syslog(filename,listOfKeywords):
+def _syslog(filename, listOfKeywords):
 
     #Open file here
     with open(filename) as f:

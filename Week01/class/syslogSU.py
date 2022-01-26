@@ -15,9 +15,9 @@ def ssh_fail(filename, searchTerms):
         #print(eachfound)
         #Split the results
         splitResults = eachFound.split(' ')
-        found.append(sp_results[8])
+        found.append(sp_results[5])
         
-    hosts = set(found)
+    returnedValues = set(found)
 
     for item in set(found):
         print(item)
