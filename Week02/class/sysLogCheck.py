@@ -1,7 +1,5 @@
 #Create an interface to search through system log files.
-import re
-import sys
-import yaml
+import re, sys, yaml
 
 #Open yaml.
 try: 

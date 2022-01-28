@@ -1,5 +1,4 @@
-import sysLogCheck
-import importlib
+import sysLogCheck, importlib
 importlib.reload(sysLogCheck)
 #SSH authentication failure checking.
 
