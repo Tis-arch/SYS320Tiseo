@@ -29,5 +29,4 @@ def _syslog(filename,listOfKeywords):
         sys.exit(1)
                 
     results = sorted(results)
-
     return results
