@@ -1,75 +1,54 @@
 # Had some help with this one, cleaner than I usually do...
-# A number of functions made to scan a directory for attack data.
-import os, yaml, re
+# Changed my mindset from functions to interface since it was more of what I learned myself and also stuff I could understand a bit easier
+# The first one I had help with but it was like someone showing me their notes and being like "yep understand this?"
+# This was a bit more in-depth and closer to what I know.
+import re, sys, yaml, re
 
-def directoryTraversal(dir):
-    
-    """Function that finds a directory and returns a file list."""
-    
-    # Check if argument is a directory
-    
-    if not os.path.isdir(dir): 
-        print("ERROR: DIRECTORY INVALID => {}".format(dir))
-        exit()
+# Function that sifts through the log and YAML file and returns results
+def _logs(logFile,searchTerm):
 
-    # List to save file to.
-    fList = [] 
+    # Opens
+    try:
+        with open('searchTerms.yaml', 'r') as yf:
+            keywords = yaml.safe_load_all(yf)
 
-    # Crawling through directory
-    for root, subfolders, filenames in os.walk(dir):
-        for f in filenames:
-            filePath = root + "/" + f
-            fList.append(filePath)
+            # Creates list for the list of keywords to scan
+            listOfKeywords = []
+            for eachEntry in keywords:
+                for key,value in eachEntry[searchTerm].items():
+                    listOfKeywords.append(value)
 
-    return(fList)
-# Function that parses a .yaml file.
-def yamlParse(yamlfile):
-    """ Parsing .YAML file """
-    # Opens file
-    try: 
-        with open(yamlfile, 'r') as yamlF:
-            # Safely loads .yaml files
-            keywords = yaml.safe_load(yamlF)
+            # Open the log file up
+            with open(logFile) as f:
+
+                # Reads the file and saves it to a variable as seperate lines
+                contents = f.readlines()
+
+            # List to store results
+            results = []
+
+            # Loops through the list.
+            for line in contents:
+
+                # Loops through the keywords
+                for eachKeyword in listOfKeywords:
+
+                    # Searches and returns results
+                    x = re.findall("%s" %eachKeyword, line)
+
+                    for found in x:
+                        # Append the returned keywords to the results list
+                        results.append(found)
+
+            # Check to see if there are results
+            if len(results) == 0:
+                print("No Results")
+                sys.exit(1)
+
+            # Sorts list
+            results = sorted(results)
+
+        return results
 
     except EnvironmentError as e:
         print(e.strerror)
-    return keywords
-def logScan(filename, searchTerms, book):
-    """Scans log file and searches for your term."""
-    # Query .yaml file for the terms in each .yaml book to retrieve the strings to search
-    #terms = keywords[book]
-    terms = searchTerms[book]
-
-    #Open a file
-    with open(filename) as f:
-        # Reads file lines
-        contents = f.readlines()
-
-    # List to save results to.
-    results = []
-
-    # Scans each line for each .yaml entry
-    for line in contents:
-        for attack in terms:
-            # If keyword is in line:
-            x = re.findall(r''+terms[attack]+'', line)
-            # Adds it to the found array for later parsing
-            # in other modules
-            for found in x:
-                results.append(line)
-                
-    results = sorted(results)
-
-    return results
-
-def returnResults(string):
-    """Returning your results..."""
-    sR = string.split(" ")
-    print("""
-    Time: {}{}\n
-    URL: {}\n
-    Status Code: {}\n
-    File Size (Bytes): {}\n
-    Sauce: {}\n
-    {}
-    """.format(sR[3].strip("["),sR[4].strip("]"), sR[6], sR[8], sR[9], sR[0], "*"*60).strip("\n"))
