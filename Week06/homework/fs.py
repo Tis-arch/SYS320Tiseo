@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(
     epilog="Developed by John Tiseo 20220210"
 )
 
-# add argument to pass to the fs.py program
+# Adds argument to pass to the fs.py program
 parser.add_argument("-d", "--directory", required="True", help="Directory that you want to traverse")
 
 # Parse the arguments
