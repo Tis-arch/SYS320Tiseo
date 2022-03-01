@@ -1,4 +1,4 @@
-### BEGIN python3 fs.py -d /usr/bin ###
+### BEGIN python3 fs.py -d /home/john ###
 
-### END python3 fs.py -d /usr/bin ###
+### END python3 fs.py -d /home/john ###
 

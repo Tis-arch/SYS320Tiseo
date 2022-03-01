@@ -1,46 +1,51 @@
-# File to traverse a given directory and its subdir and retrieve all the files
+ # File to traverse a given directory and it's subdirs and retrieve all files.
+import os, argparse
 
-import os,  argparse
+# Get info from the CLI.
+#print(sys.argv)
 
-# parser
+# Directory to traverse
+#rootdir = sys.argv[1]
 parser = argparse.ArgumentParser(
-    description="Traverses a directory and builds a forensic body file",
+    description="Traverses directory and builds a forensic body file.",
     epilog="Developed by John Tiseo 20220210"
 )
+# Hmm, today I willtraverse a directory.
+# Add an argument to pass to the fs.py program
+parser.add_argument("-d", "--directory", required="True", help="Directory you want to traverse.")
 
-# Adds argument to pass to the fs.py program
-parser.add_argument("-d", "--directory", required="True", help="Directory that you want to traverse")
-
-# Parse the arguments
+# Parse arguments
 args = parser.parse_args()
+
 rootdir = args.directory
 
+# traverse a directory
+# Check if arg is a directory.
+if not os.path.isdir(rootdir): 
 
-# Check if the argument is a directory
-if not os.path.isdir(rootdir):
-    print("Invalid directory => {}".format(rootdir))
+    print("Invalid Directory => {}".format(rootdir))
+
     exit()
 
-# List to save files
-fList = []
+# List to save files to.
+fList = [] 
 
-# Crawl through the provided directory
+# Crawling through directory.
 for root, subfolders, filenames in os.walk(rootdir):
-    for f in filenames:
-        # print(root + "/" + f)
-        fileList = root + "/" + f
-        #print(fileList)
-        fList.append(fileList)
 
-# print(fList)
+    for f in filenames:
+
+        filePath = root + "/" + f
+        fList.append(filePath)
+
+#print(fList)
 
 def statFile(toStat):
-
-    # i is going to be the variable for each of the metadata elements
+    # i will be the variable used for each of the metadata elements.
     i = os.stat(toStat, follow_symlinks=False)
 
     # mode
-    mode = i[0]
+    imode = i[0]
 
     # inode
     inode = i[1]
@@ -49,25 +54,23 @@ def statFile(toStat):
     uid = i[4]
 
     # gid
-    guid = i[5]
+    gid = i[5]
 
-    # file size
+    # filesize
     fsize = i[6]
 
-    # access time
+    #access time
     atime = i[7]
 
-    # modification time
+    # mod time
     mtime = i[8]
 
-    # ctime => windows birth of file, when it was created
-    # unix it is when attributes of the file changes.
+    # c time => unix==change time
     ctime = i[9]
     crtime = i[9]
 
-    print("0|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}".format(toStat, mode, inode, uid, guid, fsize, atime, mtime, ctime, crtime))
+    print("0|{}|{}|{}|{}|{}|{}|{}|{}|{}|{}".format(toStat, inode, imode, uid, gid, fsize, atime, mtime, ctime, crtime))
 
-# for each file in the directory, print out the stats
 for eachFile in fList:
-    statFile(eachFile)
 
+        statFile(eachFile)
