@@ -1,0 +1,11 @@
+Having some odd trouble with downloading task 5's last directory though I feel my command is structured correctly.
+
+The process was named go-daemon sample.
+The one running it was p.dalton.
+Yes, they have used SSH.
+Feb 27 at 04:44:14 was their first log-in.
+10 seconds, then they got back in.
+There was a file named aqwerpuqwerj and a log file named test-lk.
+It was definitely unauthorized entry by our ThugStyle. They followed our naming conventions with p.dalton (though they could have used a full first name) and they hid things in locations where plenty of files could be found. They ran go-daemon and did some funky stuff in root.
+Packing functions and doing threat hunting felt good overall, didn't have to rely on my probably unreliable python installation on its own. I never like being stuck, but I know not to burn out.
+No other questions.

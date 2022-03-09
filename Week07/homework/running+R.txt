@@ -1,0 +1,662 @@
+### BEGIN sudo -S ps aux ###
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6 103332 103320 ?       Ss   Feb26   0:34 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Feb26   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/0:0H-kblockd]
+root           8  0.0  0.0      0     0 ?        I<   Feb26   0:00 [mm_percpu_wq]
+root           9  0.0  0.0      0     0 ?        S    Feb26   0:02 [ksoftirqd/0]
+root          10  0.0  0.0      0     0 ?        I    Feb26   0:34 [rcu_sched]
+root          11  0.0  0.0      0     0 ?        S    Feb26   0:07 [migration/0]
+root          12  0.0  0.0      0     0 ?        S    Feb26   0:00 [idle_inject/0]
+root          14  0.0  0.0      0     0 ?        S    Feb26   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S    Feb26   0:00 [kdevtmpfs]
+root          16  0.0  0.0      0     0 ?        I<   Feb26   0:00 [netns]
+root          17  0.0  0.0      0     0 ?        S    Feb26   0:00 [rcu_tasks_kthre]
+root          18  0.0  0.0      0     0 ?        S    Feb26   0:00 [kauditd]
+root          19  0.0  0.0      0     0 ?        S    Feb26   0:00 [khungtaskd]
+root          20  0.0  0.0      0     0 ?        S    Feb26   0:00 [oom_reaper]
+root          21  0.0  0.0      0     0 ?        I<   Feb26   0:00 [writeback]
+root          22  0.0  0.0      0     0 ?        S    Feb26   0:00 [kcompactd0]
+root          23  0.0  0.0      0     0 ?        SN   Feb26   0:00 [ksmd]
+root          24  0.0  0.0      0     0 ?        SN   Feb26   0:00 [khugepaged]
+root          70  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kintegrityd]
+root          71  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kblockd]
+root          72  0.0  0.0      0     0 ?        I<   Feb26   0:00 [blkcg_punt_bio]
+root          73  0.0  0.0      0     0 ?        I<   Feb26   0:00 [tpm_dev_wq]
+root          74  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ata_sff]
+root          75  0.0  0.0      0     0 ?        I<   Feb26   0:00 [md]
+root          76  0.0  0.0      0     0 ?        I<   Feb26   0:00 [edac-poller]
+root          77  0.0  0.0      0     0 ?        I<   Feb26   0:00 [devfreq_wq]
+root          78  0.0  0.0      0     0 ?        S    Feb26   0:00 [watchdogd]
+root          81  0.0  0.0      0     0 ?        S    Feb26   0:00 [kswapd0]
+root          82  0.0  0.0      0     0 ?        S    Feb26   0:00 [ecryptfs-kthrea]
+root          84  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kthrotld]
+root          85  0.0  0.0      0     0 ?        I<   Feb26   0:00 [acpi_thermal_pm]
+root          86  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_0]
+root          87  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_0]
+root          88  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_1]
+root          89  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_1]
+root          91  0.0  0.0      0     0 ?        I<   Feb26   0:00 [vfio-irqfd-clea]
+root          92  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ipv6_addrconf]
+root         102  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kstrp]
+root         105  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/u3:0]
+root         118  0.0  0.0      0     0 ?        I<   Feb26   0:00 [charger_manager]
+root         160  0.0  0.0      0     0 ?        I<   Feb26   0:05 [kworker/0:1H-kblockd]
+root         161  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_2]
+root         162  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_2]
+root         165  0.0  0.0      0     0 ?        I<   Feb26   0:00 [cryptd]
+root         232  0.0  0.0      0     0 ?        I<   Feb26   0:00 [raid5wq]
+root         272  0.0  0.0      0     0 ?        S    Feb26   0:02 [jbd2/sda1-8]
+root         273  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ext4-rsv-conver]
+root         345  0.0  1.1 183016 183004 ?       S<s  Feb26   0:06 /lib/systemd/systemd-journald
+root         377  0.0  0.1  18976 18964 ?        Ss   Feb26   0:05 /lib/systemd/systemd-udevd
+root         476  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kaluad]
+root         477  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_rdacd]
+root         478  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpathd]
+root         479  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_handlerd]
+root         480  0.0  1.7 280200 279648 ?       SLsl Feb26   1:14 /sbin/multipathd -d -s
+root         491  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop0]
+root         494  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop2]
+systemd+     515  0.0  0.5  90232 90144 ?        Ssl  Feb26   0:02 /lib/systemd/systemd-timesyncd
+systemd+     595  0.0  0.1  23900 23780 ?        Ss   Feb26   0:02 /lib/systemd/systemd-resolved
+root         706  0.0  1.4 241168 240992 ?       Ssl  Feb26   0:22 /usr/lib/accountsservice/accounts-daemon
+message+     714  0.0  0.0   8012  8000 ?        Ss   Feb26   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         720  0.0  0.1  29196 29156 ?        Ss   Feb26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       723  0.0  1.3 224348 219996 ?       Ssl  Feb26   0:01 /usr/sbin/rsyslogd -n -iNONE
+root         725  0.0  0.1  18056 18044 ?        Ss   Feb26   0:04 /lib/systemd/systemd-logind
+root         727  0.0  2.3 394920 392824 ?       Ssl  Feb26   0:01 /usr/lib/udisks2/udisksd
+daemon       728  0.0  0.0   3792  3772 ?        Ss   Feb26   0:00 /usr/sbin/atd -f
+root         771  0.0  0.0   7352  7296 ttyS0    Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         775  0.0  0.0   5828  5768 tty1     Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         789  0.0  0.6 108108 107952 ?       Ssl  Feb26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+p.dalton    3025  0.0  0.1  18408 18352 ?        Ss   Feb26   0:00 /lib/systemd/systemd --user
+p.dalton    3027  0.0  0.6 104268 104256 ?       S    Feb26   0:00 (sd-pam)
+p.dalton    3138  0.0  0.0 1003532 4892 ?        Ssl  Feb26   0:01 [go-daemon sample]
+root        3363  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_system_task]
+root        3364  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_delay_taskq]
+root        3365  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_dynamic_tas]
+root        3366  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_kmem_cache]
+root        3395  0.0  0.0      0     0 ?        S<   Feb26   0:00 [zvol]
+root        3396  0.0  0.0      0     0 ?        S    Feb26   0:00 [arc_prune]
+root        3397  0.0  0.0      0     0 ?        SN   Feb26   0:00 [zthr_procedure]
+root        3398  0.0  0.0      0     0 ?        SN   Feb26   0:24 [zthr_procedure]
+root        3399  0.0  0.0      0     0 ?        S    Feb26   0:00 [dbu_evict]
+root        3400  0.0  0.0      0     0 ?        SN   Feb26   0:23 [dbuf_evict]
+root        3401  0.0  0.0      0     0 ?        SN   Feb26   0:00 [z_vdev_file]
+root        3402  0.0  0.0      0     0 ?        S    Feb26   0:18 [l2arc_feed]
+ubuntu     15253  0.0  0.1  18412 18368 ?        Ss   Feb27   0:00 /lib/systemd/systemd --user
+ubuntu     15261  0.0  0.6 104268 104256 ?       S    Feb27   0:00 (sd-pam)
+root       15949  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop3]
+root       16031  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop4]
+root       16271  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop5]
+root       23279  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfsalloc]
+root       23280  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfs_mru_cache]
+uuidd      24811  0.0  0.0   9748  9664 ?        Ss   Feb28   0:00 /usr/sbin/uuidd --socket-activation
+root       25680  0.0  0.2 742332 48468 ?        Ssl  Feb28   1:02 /usr/lib/snapd/snapd
+root       34879  0.0  1.4 238704 238556 ?       Ssl  Mar02   0:00 /usr/lib/policykit-1/polkitd --no-debug
+systemd+   36633  0.0  0.1  26576 26424 ?        Ss   Mar02   0:05 /lib/systemd/systemd-networkd
+root       38803  0.0  0.2  40876 40788 ?        Ss   Mar02   0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+root       40152  0.0  2.0 373216 343416 ?       Sl   Mar02   0:00 /opt/pbis/sbin/lwsmd --start-as-daemon
+root       40160  0.0  3.4 595008 558028 ?       Sl   Mar02   1:16 lw-container lwreg
+root       40188  0.0  1.7 328824 294904 ?       Sl   Mar02   0:00 lw-container eventlog
+root       40200  0.0  2.9 521928 491088 ?       Sl   Mar02   0:09 lw-container netlogon
+root       40210  0.0  3.4 598840 557956 ?       Sl   Mar02   0:00 lw-container lwio
+root       40223  0.0  4.7 836452 781836 ?       Sl   Mar02   2:05 lw-container lsass
+root       40237  0.0  2.1 395216 360272 ?       Sl   Mar02   0:00 lw-container reapsysl
+root       40406  0.0  0.0   8536  8524 ?        Ss   Mar02   0:01 /usr/sbin/cron -f
+root       40420  0.0  0.0  12176 12164 ?        Ss   Mar02   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       83827  0.0  0.0  24676 15728 ?        Ss   Mar05   0:00 sshd: ubuntu [priv]
+ubuntu     83939  0.0  0.0  24932 16004 ?        S    Mar05   0:00 sshd: ubuntu@pts/1
+ubuntu     83940  0.0  0.0  10112 10100 pts/1    Ss+  Mar05   0:00 bash
+root      110198  0.0  0.0  24932 16004 ?        Ss   18:14   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  110281  0.0  0.0  24932 16004 ?        S    18:14   0:00 sshd: ciaran.byrne@pts/0
+ciaran.+  110282  0.0  0.0  20144 12236 pts/0    Ss+  18:14   0:00 -bash
+root      114316  0.0  0.0  24948 16000 ?        Ss   19:23   0:00 sshd: john.tiseo [priv]
+john.ti+  114389  0.0  0.0  24948 16008 ?        S    19:23   0:00 sshd: john.tiseo
+root      115044  0.0  0.0  24952 16024 ?        Ss   19:36   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  115123  0.0  0.0  24952 16024 ?        S    19:36   0:01 sshd: ciaran.byrne@notty
+root      115169  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/0:1-cgroup_destroy]
+root      116323  0.0  0.0      0     0 ?        I    20:19   0:01 [kworker/0:2-events]
+ciaran.+  116423  0.0  0.0  15844  7820 ?        Ss   20:20   0:00 /usr/lib/openssh/sftp-server
+root      116849  0.0  0.0  24924 15968 ?        Ss   20:29   0:00 sshd: samuel.barrows [priv]
+samuel.+  116922  0.0  0.0  25172 16244 ?        S    20:29   0:00 sshd: samuel.barrows@notty
+samuel.+  116942  0.0  0.0  15844  7840 ?        Ss   20:29   0:00 /usr/lib/openssh/sftp-server
+root      118653  0.0  0.0      0     0 ?        I    21:00   0:00 [kworker/u2:1-events_power_efficient]
+root      119036  0.0  0.0  24952 15996 ?        Ss   21:04   0:00 sshd: john.tiseo [priv]
+john.ti+  119117  0.0  0.0  24952 15964 ?        S    21:04   0:00 sshd: john.tiseo@notty
+john.ti+  119118  0.0  0.0  15844  7836 ?        Ss   21:04   0:00 /usr/lib/openssh/sftp-server
+root      119524  0.0  0.0  24948 16000 ?        Ss   21:07   0:00 sshd: john.tiseo [priv]
+john.ti+  119619  0.0  0.0  24948 16020 ?        S    21:07   0:00 sshd: john.tiseo@notty
+root      120397  0.0  0.0      0     0 ?        I    21:15   0:00 [kworker/u2:0-events_power_efficient]
+root      120470  0.0  0.0  24952 16004 ?        Ss   21:15   0:00 sshd: john.tiseo [priv]
+john.ti+  120543  0.0  0.0  24952 16024 ?        S    21:15   0:00 sshd: john.tiseo@notty
+root      120667  0.0  0.0  24948 15992 ?        Ss   21:17   0:00 sshd: john.tiseo [priv]
+john.ti+  120743  0.0  0.0  24948 16020 ?        S    21:17   0:00 sshd: john.tiseo@notty
+root      121708  0.0  0.0  24952 15996 ?        Ss   21:27   0:00 sshd: john.tiseo [priv]
+john.ti+  121826  0.0  0.0  24952 16024 ?        S    21:27   0:00 sshd: john.tiseo@notty
+root      121910  0.0  0.0      0     0 ?        I    21:32   0:00 [kworker/u2:2-events_freezable_power_]
+root      121918  0.1  0.0  24948 16000 ?        Ss   21:35   0:00 sshd: john.tiseo [priv]
+john.ti+  121996  1.1  0.0  24948 16020 ?        S    21:35   0:00 sshd: john.tiseo@notty
+john.ti+  122011  0.0  0.0  15844  5956 ?        Ss   21:35   0:00 /usr/lib/openssh/sftp-server
+root      122012  0.0  0.0  22216  6364 ?        Ss   21:35   0:00 sudo -S ps aux
+root      122013  0.0  0.0  20800  4920 ?        R    21:35   0:00 ps aux
+### END sudo -S ps aux ###
+
+### BEGIN sudo -S cp /var/log/auth.log . ###
+
+### END sudo -S cp /var/log/auth.log . ###
+
+### BEGIN sudo -S chmod +r auth.log ###
+
+### END sudo -S chmod +r auth.log ###
+
+### BEGIN dir /home/p.dalton/ ###
+
+aqwerpuqwerj  test-lk
+### END dir /home/p.dalton/ ###
+
+### BEGIN sudo -S ps aux ###
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6 103332 103320 ?       Ss   Feb26   0:34 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Feb26   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/0:0H-kblockd]
+root           8  0.0  0.0      0     0 ?        I<   Feb26   0:00 [mm_percpu_wq]
+root           9  0.0  0.0      0     0 ?        S    Feb26   0:02 [ksoftirqd/0]
+root          10  0.0  0.0      0     0 ?        I    Feb26   0:34 [rcu_sched]
+root          11  0.0  0.0      0     0 ?        S    Feb26   0:07 [migration/0]
+root          12  0.0  0.0      0     0 ?        S    Feb26   0:00 [idle_inject/0]
+root          14  0.0  0.0      0     0 ?        S    Feb26   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S    Feb26   0:00 [kdevtmpfs]
+root          16  0.0  0.0      0     0 ?        I<   Feb26   0:00 [netns]
+root          17  0.0  0.0      0     0 ?        S    Feb26   0:00 [rcu_tasks_kthre]
+root          18  0.0  0.0      0     0 ?        S    Feb26   0:00 [kauditd]
+root          19  0.0  0.0      0     0 ?        S    Feb26   0:00 [khungtaskd]
+root          20  0.0  0.0      0     0 ?        S    Feb26   0:00 [oom_reaper]
+root          21  0.0  0.0      0     0 ?        I<   Feb26   0:00 [writeback]
+root          22  0.0  0.0      0     0 ?        S    Feb26   0:00 [kcompactd0]
+root          23  0.0  0.0      0     0 ?        SN   Feb26   0:00 [ksmd]
+root          24  0.0  0.0      0     0 ?        SN   Feb26   0:00 [khugepaged]
+root          70  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kintegrityd]
+root          71  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kblockd]
+root          72  0.0  0.0      0     0 ?        I<   Feb26   0:00 [blkcg_punt_bio]
+root          73  0.0  0.0      0     0 ?        I<   Feb26   0:00 [tpm_dev_wq]
+root          74  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ata_sff]
+root          75  0.0  0.0      0     0 ?        I<   Feb26   0:00 [md]
+root          76  0.0  0.0      0     0 ?        I<   Feb26   0:00 [edac-poller]
+root          77  0.0  0.0      0     0 ?        I<   Feb26   0:00 [devfreq_wq]
+root          78  0.0  0.0      0     0 ?        S    Feb26   0:00 [watchdogd]
+root          81  0.0  0.0      0     0 ?        S    Feb26   0:00 [kswapd0]
+root          82  0.0  0.0      0     0 ?        S    Feb26   0:00 [ecryptfs-kthrea]
+root          84  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kthrotld]
+root          85  0.0  0.0      0     0 ?        I<   Feb26   0:00 [acpi_thermal_pm]
+root          86  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_0]
+root          87  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_0]
+root          88  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_1]
+root          89  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_1]
+root          91  0.0  0.0      0     0 ?        I<   Feb26   0:00 [vfio-irqfd-clea]
+root          92  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ipv6_addrconf]
+root         102  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kstrp]
+root         105  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/u3:0]
+root         118  0.0  0.0      0     0 ?        I<   Feb26   0:00 [charger_manager]
+root         160  0.0  0.0      0     0 ?        I<   Feb26   0:05 [kworker/0:1H-kblockd]
+root         161  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_2]
+root         162  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_2]
+root         165  0.0  0.0      0     0 ?        I<   Feb26   0:00 [cryptd]
+root         232  0.0  0.0      0     0 ?        I<   Feb26   0:00 [raid5wq]
+root         272  0.0  0.0      0     0 ?        S    Feb26   0:02 [jbd2/sda1-8]
+root         273  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ext4-rsv-conver]
+root         345  0.0  1.1 183016 183004 ?       S<s  Feb26   0:06 /lib/systemd/systemd-journald
+root         377  0.0  0.1  18976 18964 ?        Ss   Feb26   0:05 /lib/systemd/systemd-udevd
+root         476  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kaluad]
+root         477  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_rdacd]
+root         478  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpathd]
+root         479  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_handlerd]
+root         480  0.0  1.7 280200 279648 ?       SLsl Feb26   1:14 /sbin/multipathd -d -s
+root         491  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop0]
+root         494  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop2]
+systemd+     515  0.0  0.5  90232 90144 ?        Ssl  Feb26   0:02 /lib/systemd/systemd-timesyncd
+systemd+     595  0.0  0.1  23900 23780 ?        Ss   Feb26   0:02 /lib/systemd/systemd-resolved
+root         706  0.0  1.4 241168 240992 ?       Ssl  Feb26   0:22 /usr/lib/accountsservice/accounts-daemon
+message+     714  0.0  0.0   8012  8000 ?        Ss   Feb26   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         720  0.0  0.1  29196 29156 ?        Ss   Feb26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       723  0.0  1.3 224348 219996 ?       Ssl  Feb26   0:01 /usr/sbin/rsyslogd -n -iNONE
+root         725  0.0  0.1  18056 18044 ?        Ss   Feb26   0:04 /lib/systemd/systemd-logind
+root         727  0.0  2.3 394920 392824 ?       Ssl  Feb26   0:01 /usr/lib/udisks2/udisksd
+daemon       728  0.0  0.0   3792  3772 ?        Ss   Feb26   0:00 /usr/sbin/atd -f
+root         771  0.0  0.0   7352  7296 ttyS0    Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         775  0.0  0.0   5828  5768 tty1     Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         789  0.0  0.6 108108 107952 ?       Ssl  Feb26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+p.dalton    3025  0.0  0.1  18408 18352 ?        Ss   Feb26   0:00 /lib/systemd/systemd --user
+p.dalton    3027  0.0  0.6 104268 104256 ?       S    Feb26   0:00 (sd-pam)
+p.dalton    3138  0.0  0.0 1003532 4892 ?        Ssl  Feb26   0:01 [go-daemon sample]
+root        3363  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_system_task]
+root        3364  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_delay_taskq]
+root        3365  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_dynamic_tas]
+root        3366  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_kmem_cache]
+root        3395  0.0  0.0      0     0 ?        S<   Feb26   0:00 [zvol]
+root        3396  0.0  0.0      0     0 ?        S    Feb26   0:00 [arc_prune]
+root        3397  0.0  0.0      0     0 ?        SN   Feb26   0:00 [zthr_procedure]
+root        3398  0.0  0.0      0     0 ?        SN   Feb26   0:24 [zthr_procedure]
+root        3399  0.0  0.0      0     0 ?        S    Feb26   0:00 [dbu_evict]
+root        3400  0.0  0.0      0     0 ?        SN   Feb26   0:23 [dbuf_evict]
+root        3401  0.0  0.0      0     0 ?        SN   Feb26   0:00 [z_vdev_file]
+root        3402  0.0  0.0      0     0 ?        S    Feb26   0:18 [l2arc_feed]
+ubuntu     15253  0.0  0.1  18412 18368 ?        Ss   Feb27   0:00 /lib/systemd/systemd --user
+ubuntu     15261  0.0  0.6 104268 104256 ?       S    Feb27   0:00 (sd-pam)
+root       15949  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop3]
+root       16031  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop4]
+root       16271  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop5]
+root       23279  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfsalloc]
+root       23280  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfs_mru_cache]
+uuidd      24811  0.0  0.0   9748  9664 ?        Ss   Feb28   0:00 /usr/sbin/uuidd --socket-activation
+root       25680  0.0  0.2 742332 48468 ?        Ssl  Feb28   1:02 /usr/lib/snapd/snapd
+root       34879  0.0  1.4 238704 238556 ?       Ssl  Mar02   0:00 /usr/lib/policykit-1/polkitd --no-debug
+systemd+   36633  0.0  0.1  26576 26424 ?        Ss   Mar02   0:05 /lib/systemd/systemd-networkd
+root       38803  0.0  0.2  40876 40788 ?        Ss   Mar02   0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+root       40152  0.0  2.0 373216 343416 ?       Sl   Mar02   0:00 /opt/pbis/sbin/lwsmd --start-as-daemon
+root       40160  0.0  3.4 595008 558028 ?       Sl   Mar02   1:16 lw-container lwreg
+root       40188  0.0  1.7 328824 294904 ?       Sl   Mar02   0:00 lw-container eventlog
+root       40200  0.0  2.9 521928 491088 ?       Sl   Mar02   0:09 lw-container netlogon
+root       40210  0.0  3.4 598840 557956 ?       Sl   Mar02   0:00 lw-container lwio
+root       40223  0.0  4.7 836452 781836 ?       Sl   Mar02   2:05 lw-container lsass
+root       40237  0.0  2.1 395216 360272 ?       Sl   Mar02   0:00 lw-container reapsysl
+root       40406  0.0  0.0   8536  8524 ?        Ss   Mar02   0:01 /usr/sbin/cron -f
+root       40420  0.0  0.0  12176 12164 ?        Ss   Mar02   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       83827  0.0  0.0  24676 15728 ?        Ss   Mar05   0:00 sshd: ubuntu [priv]
+ubuntu     83939  0.0  0.0  24932 16004 ?        S    Mar05   0:00 sshd: ubuntu@pts/1
+ubuntu     83940  0.0  0.0  10112 10100 pts/1    Ss+  Mar05   0:00 bash
+root      110198  0.0  0.0  24932 16004 ?        Ss   18:14   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  110281  0.0  0.0  24932 16004 ?        S    18:14   0:00 sshd: ciaran.byrne@pts/0
+ciaran.+  110282  0.0  0.0  20144 12236 pts/0    Ss+  18:14   0:00 -bash
+root      114316  0.0  0.0  24948 16000 ?        Ss   19:23   0:00 sshd: john.tiseo [priv]
+john.ti+  114389  0.0  0.0  24948 16008 ?        S    19:23   0:00 sshd: john.tiseo
+root      115044  0.0  0.0  24952 16024 ?        Ss   19:36   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  115123  0.0  0.0  24952 16024 ?        S    19:36   0:01 sshd: ciaran.byrne@notty
+root      115169  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/0:1-cgroup_destroy]
+root      116323  0.0  0.0      0     0 ?        I    20:19   0:01 [kworker/0:2-events]
+ciaran.+  116423  0.0  0.0  15844  7820 ?        Ss   20:20   0:00 /usr/lib/openssh/sftp-server
+root      116849  0.0  0.0  24924 15968 ?        Ss   20:29   0:00 sshd: samuel.barrows [priv]
+samuel.+  116922  0.0  0.0  25172 16244 ?        S    20:29   0:00 sshd: samuel.barrows@notty
+samuel.+  116942  0.0  0.0  15844  7840 ?        Ss   20:29   0:00 /usr/lib/openssh/sftp-server
+root      118653  0.0  0.0      0     0 ?        I    21:00   0:00 [kworker/u2:1-events_power_efficient]
+root      119036  0.0  0.0  24952 15996 ?        Ss   21:04   0:00 sshd: john.tiseo [priv]
+john.ti+  119117  0.0  0.0  24952 15964 ?        S    21:04   0:00 sshd: john.tiseo@notty
+john.ti+  119118  0.0  0.0  15844  7836 ?        Ss   21:04   0:00 /usr/lib/openssh/sftp-server
+root      119524  0.0  0.0  24948 16000 ?        Ss   21:07   0:00 sshd: john.tiseo [priv]
+john.ti+  119619  0.0  0.0  24948 16020 ?        S    21:07   0:00 sshd: john.tiseo@notty
+root      120397  0.0  0.0      0     0 ?        I    21:15   0:00 [kworker/u2:0-events_freezable_power_]
+root      120470  0.0  0.0  24952 16004 ?        Ss   21:15   0:00 sshd: john.tiseo [priv]
+john.ti+  120543  0.0  0.0  24952 16024 ?        S    21:15   0:00 sshd: john.tiseo@notty
+root      120667  0.0  0.0  24948 15992 ?        Ss   21:17   0:00 sshd: john.tiseo [priv]
+john.ti+  120743  0.0  0.0  24948 16020 ?        S    21:17   0:00 sshd: john.tiseo@notty
+root      121708  0.0  0.0  24952 15996 ?        Ss   21:27   0:00 sshd: john.tiseo [priv]
+john.ti+  121826  0.0  0.0  24952 16024 ?        S    21:27   0:00 sshd: john.tiseo@notty
+root      121918  0.0  0.0  24948 16000 ?        Ss   21:35   0:00 sshd: john.tiseo [priv]
+john.ti+  121996  0.0  0.0  25092 16148 ?        S    21:35   0:00 sshd: john.tiseo@notty
+john.ti+  122011  0.0  0.0  15844  7788 ?        Ss   21:35   0:00 /usr/lib/openssh/sftp-server
+root      122124  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/u2:2-events_power_efficient]
+root      122135  0.2  0.0  24952 15996 ?        Ss   21:47   0:00 sshd: john.tiseo [priv]
+john.ti+  122214  1.0  0.0  24952 16024 ?        S    21:47   0:00 sshd: john.tiseo@notty
+john.ti+  122229  0.0  0.0  15844  6024 ?        Ss   21:48   0:00 /usr/lib/openssh/sftp-server
+root      122230  0.0  0.0  22220  6376 ?        Ss   21:48   0:00 sudo -S ps aux
+root      122231  0.0  0.0  20800  5048 ?        R    21:48   0:00 ps aux
+### END sudo -S ps aux ###
+
+### BEGIN sudo -S cp /var/log/auth.log . ###
+
+### END sudo -S cp /var/log/auth.log . ###
+
+### BEGIN sudo -S chmod +r auth.log ###
+
+### END sudo -S chmod +r auth.log ###
+
+### BEGIN cd /home/p.dalton/ ###
+
+### END cd /home/p.dalton/ ###
+
+### BEGIN sudo -S ps aux ###
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6 103332 103320 ?       Ss   Feb26   0:34 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Feb26   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/0:0H-kblockd]
+root           8  0.0  0.0      0     0 ?        I<   Feb26   0:00 [mm_percpu_wq]
+root           9  0.0  0.0      0     0 ?        S    Feb26   0:02 [ksoftirqd/0]
+root          10  0.0  0.0      0     0 ?        I    Feb26   0:34 [rcu_sched]
+root          11  0.0  0.0      0     0 ?        S    Feb26   0:07 [migration/0]
+root          12  0.0  0.0      0     0 ?        S    Feb26   0:00 [idle_inject/0]
+root          14  0.0  0.0      0     0 ?        S    Feb26   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S    Feb26   0:00 [kdevtmpfs]
+root          16  0.0  0.0      0     0 ?        I<   Feb26   0:00 [netns]
+root          17  0.0  0.0      0     0 ?        S    Feb26   0:00 [rcu_tasks_kthre]
+root          18  0.0  0.0      0     0 ?        S    Feb26   0:00 [kauditd]
+root          19  0.0  0.0      0     0 ?        S    Feb26   0:00 [khungtaskd]
+root          20  0.0  0.0      0     0 ?        S    Feb26   0:00 [oom_reaper]
+root          21  0.0  0.0      0     0 ?        I<   Feb26   0:00 [writeback]
+root          22  0.0  0.0      0     0 ?        S    Feb26   0:00 [kcompactd0]
+root          23  0.0  0.0      0     0 ?        SN   Feb26   0:00 [ksmd]
+root          24  0.0  0.0      0     0 ?        SN   Feb26   0:00 [khugepaged]
+root          70  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kintegrityd]
+root          71  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kblockd]
+root          72  0.0  0.0      0     0 ?        I<   Feb26   0:00 [blkcg_punt_bio]
+root          73  0.0  0.0      0     0 ?        I<   Feb26   0:00 [tpm_dev_wq]
+root          74  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ata_sff]
+root          75  0.0  0.0      0     0 ?        I<   Feb26   0:00 [md]
+root          76  0.0  0.0      0     0 ?        I<   Feb26   0:00 [edac-poller]
+root          77  0.0  0.0      0     0 ?        I<   Feb26   0:00 [devfreq_wq]
+root          78  0.0  0.0      0     0 ?        S    Feb26   0:00 [watchdogd]
+root          81  0.0  0.0      0     0 ?        S    Feb26   0:00 [kswapd0]
+root          82  0.0  0.0      0     0 ?        S    Feb26   0:00 [ecryptfs-kthrea]
+root          84  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kthrotld]
+root          85  0.0  0.0      0     0 ?        I<   Feb26   0:00 [acpi_thermal_pm]
+root          86  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_0]
+root          87  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_0]
+root          88  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_1]
+root          89  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_1]
+root          91  0.0  0.0      0     0 ?        I<   Feb26   0:00 [vfio-irqfd-clea]
+root          92  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ipv6_addrconf]
+root         102  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kstrp]
+root         105  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/u3:0]
+root         118  0.0  0.0      0     0 ?        I<   Feb26   0:00 [charger_manager]
+root         160  0.0  0.0      0     0 ?        I<   Feb26   0:05 [kworker/0:1H-kblockd]
+root         161  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_2]
+root         162  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_2]
+root         165  0.0  0.0      0     0 ?        I<   Feb26   0:00 [cryptd]
+root         232  0.0  0.0      0     0 ?        I<   Feb26   0:00 [raid5wq]
+root         272  0.0  0.0      0     0 ?        S    Feb26   0:02 [jbd2/sda1-8]
+root         273  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ext4-rsv-conver]
+root         345  0.0  1.1 183016 183004 ?       S<s  Feb26   0:06 /lib/systemd/systemd-journald
+root         377  0.0  0.1  18976 18964 ?        Ss   Feb26   0:05 /lib/systemd/systemd-udevd
+root         476  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kaluad]
+root         477  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_rdacd]
+root         478  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpathd]
+root         479  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_handlerd]
+root         480  0.0  1.7 280200 279648 ?       SLsl Feb26   1:14 /sbin/multipathd -d -s
+root         491  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop0]
+root         494  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop2]
+systemd+     515  0.0  0.5  90232 90144 ?        Ssl  Feb26   0:02 /lib/systemd/systemd-timesyncd
+systemd+     595  0.0  0.1  23900 23780 ?        Ss   Feb26   0:02 /lib/systemd/systemd-resolved
+root         706  0.0  1.4 241168 240992 ?       Ssl  Feb26   0:22 /usr/lib/accountsservice/accounts-daemon
+message+     714  0.0  0.0   8012  8000 ?        Ss   Feb26   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         720  0.0  0.1  29196 29156 ?        Ss   Feb26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       723  0.0  1.3 224348 219996 ?       Ssl  Feb26   0:01 /usr/sbin/rsyslogd -n -iNONE
+root         725  0.0  0.1  18056 18044 ?        Ss   Feb26   0:04 /lib/systemd/systemd-logind
+root         727  0.0  2.3 394920 392824 ?       Ssl  Feb26   0:01 /usr/lib/udisks2/udisksd
+daemon       728  0.0  0.0   3792  3772 ?        Ss   Feb26   0:00 /usr/sbin/atd -f
+root         771  0.0  0.0   7352  7296 ttyS0    Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         775  0.0  0.0   5828  5768 tty1     Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         789  0.0  0.6 108108 107952 ?       Ssl  Feb26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+p.dalton    3025  0.0  0.1  18408 18352 ?        Ss   Feb26   0:00 /lib/systemd/systemd --user
+p.dalton    3027  0.0  0.6 104268 104256 ?       S    Feb26   0:00 (sd-pam)
+p.dalton    3138  0.0  0.0 1003532 4892 ?        Ssl  Feb26   0:01 [go-daemon sample]
+root        3363  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_system_task]
+root        3364  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_delay_taskq]
+root        3365  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_dynamic_tas]
+root        3366  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_kmem_cache]
+root        3395  0.0  0.0      0     0 ?        S<   Feb26   0:00 [zvol]
+root        3396  0.0  0.0      0     0 ?        S    Feb26   0:00 [arc_prune]
+root        3397  0.0  0.0      0     0 ?        SN   Feb26   0:00 [zthr_procedure]
+root        3398  0.0  0.0      0     0 ?        SN   Feb26   0:24 [zthr_procedure]
+root        3399  0.0  0.0      0     0 ?        S    Feb26   0:00 [dbu_evict]
+root        3400  0.0  0.0      0     0 ?        SN   Feb26   0:23 [dbuf_evict]
+root        3401  0.0  0.0      0     0 ?        SN   Feb26   0:00 [z_vdev_file]
+root        3402  0.0  0.0      0     0 ?        S    Feb26   0:18 [l2arc_feed]
+ubuntu     15253  0.0  0.1  18412 18368 ?        Ss   Feb27   0:00 /lib/systemd/systemd --user
+ubuntu     15261  0.0  0.6 104268 104256 ?       S    Feb27   0:00 (sd-pam)
+root       15949  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop3]
+root       16031  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop4]
+root       16271  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop5]
+root       23279  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfsalloc]
+root       23280  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfs_mru_cache]
+uuidd      24811  0.0  0.0   9748  9664 ?        Ss   Feb28   0:00 /usr/sbin/uuidd --socket-activation
+root       25680  0.0  0.2 742332 48468 ?        Ssl  Feb28   1:02 /usr/lib/snapd/snapd
+root       34879  0.0  1.4 238704 238556 ?       Ssl  Mar02   0:00 /usr/lib/policykit-1/polkitd --no-debug
+systemd+   36633  0.0  0.1  26576 26424 ?        Ss   Mar02   0:05 /lib/systemd/systemd-networkd
+root       38803  0.0  0.2  40876 40788 ?        Ss   Mar02   0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+root       40152  0.0  2.0 373216 343416 ?       Sl   Mar02   0:00 /opt/pbis/sbin/lwsmd --start-as-daemon
+root       40160  0.0  3.4 595008 558028 ?       Sl   Mar02   1:16 lw-container lwreg
+root       40188  0.0  1.7 328824 294904 ?       Sl   Mar02   0:00 lw-container eventlog
+root       40200  0.0  2.9 521928 491088 ?       Sl   Mar02   0:09 lw-container netlogon
+root       40210  0.0  3.4 598840 557956 ?       Sl   Mar02   0:00 lw-container lwio
+root       40223  0.0  4.7 836452 781836 ?       Sl   Mar02   2:06 lw-container lsass
+root       40237  0.0  2.1 395216 360272 ?       Sl   Mar02   0:00 lw-container reapsysl
+root       40406  0.0  0.0   8536  8524 ?        Ss   Mar02   0:01 /usr/sbin/cron -f
+root       40420  0.0  0.0  12176 12164 ?        Ss   Mar02   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       83827  0.0  0.0  24676 15728 ?        Ss   Mar05   0:00 sshd: ubuntu [priv]
+ubuntu     83939  0.0  0.0  24932 16004 ?        S    Mar05   0:00 sshd: ubuntu@pts/1
+ubuntu     83940  0.0  0.0  10112 10100 pts/1    Ss+  Mar05   0:00 bash
+root      110198  0.0  0.0  24932 16004 ?        Ss   18:14   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  110281  0.0  0.0  24932 16004 ?        S    18:14   0:00 sshd: ciaran.byrne@pts/0
+ciaran.+  110282  0.0  0.0  20144 12236 pts/0    Ss+  18:14   0:00 -bash
+root      114316  0.0  0.0  24948 16000 ?        Ss   19:23   0:00 sshd: john.tiseo [priv]
+john.ti+  114389  0.0  0.0  24948 16008 ?        S    19:23   0:00 sshd: john.tiseo
+root      115044  0.0  0.0  24952 16024 ?        Ss   19:36   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  115123  0.0  0.0  24952 16024 ?        S    19:36   0:01 sshd: ciaran.byrne@notty
+root      115169  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/0:1-cgroup_destroy]
+root      116323  0.0  0.0      0     0 ?        I    20:19   0:01 [kworker/0:2-events]
+ciaran.+  116423  0.0  0.0  15844  7820 ?        Ss   20:20   0:00 /usr/lib/openssh/sftp-server
+root      116849  0.0  0.0  24924 15968 ?        Ss   20:29   0:00 sshd: samuel.barrows [priv]
+samuel.+  116922  0.0  0.0  25172 16244 ?        S    20:29   0:00 sshd: samuel.barrows@notty
+samuel.+  116942  0.0  0.0  15844  7840 ?        Ss   20:29   0:00 /usr/lib/openssh/sftp-server
+root      119036  0.0  0.0  24952 15996 ?        Ss   21:04   0:00 sshd: john.tiseo [priv]
+john.ti+  119117  0.0  0.0  24952 15964 ?        S    21:04   0:00 sshd: john.tiseo@notty
+john.ti+  119118  0.0  0.0  15844  7836 ?        Ss   21:04   0:00 /usr/lib/openssh/sftp-server
+root      119524  0.0  0.0  24948 16000 ?        Ss   21:07   0:00 sshd: john.tiseo [priv]
+john.ti+  119619  0.0  0.0  24948 16020 ?        S    21:07   0:00 sshd: john.tiseo@notty
+root      120397  0.0  0.0      0     0 ?        I    21:15   0:00 [kworker/u2:0-events_freezable_power_]
+root      120470  0.0  0.0  24952 16004 ?        Ss   21:15   0:00 sshd: john.tiseo [priv]
+john.ti+  120543  0.0  0.0  24952 16024 ?        S    21:15   0:00 sshd: john.tiseo@notty
+root      120667  0.0  0.0  24948 15992 ?        Ss   21:17   0:00 sshd: john.tiseo [priv]
+john.ti+  120743  0.0  0.0  24948 16020 ?        S    21:17   0:00 sshd: john.tiseo@notty
+root      121708  0.0  0.0  24952 15996 ?        Ss   21:27   0:00 sshd: john.tiseo [priv]
+john.ti+  121826  0.0  0.0  24952 16024 ?        S    21:27   0:00 sshd: john.tiseo@notty
+root      121918  0.0  0.0  24948 16000 ?        Ss   21:35   0:00 sshd: john.tiseo [priv]
+john.ti+  121996  0.0  0.0  25092 16148 ?        S    21:35   0:00 sshd: john.tiseo@notty
+john.ti+  122011  0.0  0.0  15844  7788 ?        Ss   21:35   0:00 /usr/lib/openssh/sftp-server
+root      122124  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/u2:2-events_power_efficient]
+root      122135  0.0  0.0  24952 15996 ?        Ss   21:47   0:00 sshd: john.tiseo [priv]
+john.ti+  122214  0.0  0.0  25296 16336 ?        S    21:47   0:00 sshd: john.tiseo@notty
+john.ti+  122229  0.0  0.0  15844  7784 ?        Ss   21:48   0:00 /usr/lib/openssh/sftp-server
+root      122274  0.0  0.0      0     0 ?        I    21:57   0:00 [kworker/u2:1-events_power_efficient]
+root      122297  0.1  0.0  24948 16000 ?        Ss   22:01   0:00 sshd: john.tiseo [priv]
+john.ti+  122375  1.0  0.0  24948 16020 ?        S    22:01   0:00 sshd: john.tiseo@notty
+john.ti+  122390  0.0  0.0  15844  6120 ?        Ss   22:02   0:00 /usr/lib/openssh/sftp-server
+root      122391  0.0  0.0  22212  6336 ?        Ss   22:02   0:00 sudo -S ps aux
+root      122392  0.0  0.0  20800  5016 ?        R    22:02   0:00 ps aux
+### END sudo -S ps aux ###
+
+### BEGIN sudo -S cp /var/log/auth.log . ###
+
+### END sudo -S cp /var/log/auth.log . ###
+
+### BEGIN sudo -S chmod +r auth.log ###
+
+### END sudo -S chmod +r auth.log ###
+
+### BEGIN dir /home/p.dalton/ ###
+
+aqwerpuqwerj  test-lk
+### END dir /home/p.dalton/ ###
+
+### BEGIN sudo -S ps aux ###
+
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6 103332 103320 ?       Ss   Feb26   0:35 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Feb26   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Feb26   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/0:0H-kblockd]
+root           8  0.0  0.0      0     0 ?        I<   Feb26   0:00 [mm_percpu_wq]
+root           9  0.0  0.0      0     0 ?        S    Feb26   0:02 [ksoftirqd/0]
+root          10  0.0  0.0      0     0 ?        I    Feb26   0:34 [rcu_sched]
+root          11  0.0  0.0      0     0 ?        S    Feb26   0:07 [migration/0]
+root          12  0.0  0.0      0     0 ?        S    Feb26   0:00 [idle_inject/0]
+root          14  0.0  0.0      0     0 ?        S    Feb26   0:00 [cpuhp/0]
+root          15  0.0  0.0      0     0 ?        S    Feb26   0:00 [kdevtmpfs]
+root          16  0.0  0.0      0     0 ?        I<   Feb26   0:00 [netns]
+root          17  0.0  0.0      0     0 ?        S    Feb26   0:00 [rcu_tasks_kthre]
+root          18  0.0  0.0      0     0 ?        S    Feb26   0:00 [kauditd]
+root          19  0.0  0.0      0     0 ?        S    Feb26   0:00 [khungtaskd]
+root          20  0.0  0.0      0     0 ?        S    Feb26   0:00 [oom_reaper]
+root          21  0.0  0.0      0     0 ?        I<   Feb26   0:00 [writeback]
+root          22  0.0  0.0      0     0 ?        S    Feb26   0:00 [kcompactd0]
+root          23  0.0  0.0      0     0 ?        SN   Feb26   0:00 [ksmd]
+root          24  0.0  0.0      0     0 ?        SN   Feb26   0:00 [khugepaged]
+root          70  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kintegrityd]
+root          71  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kblockd]
+root          72  0.0  0.0      0     0 ?        I<   Feb26   0:00 [blkcg_punt_bio]
+root          73  0.0  0.0      0     0 ?        I<   Feb26   0:00 [tpm_dev_wq]
+root          74  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ata_sff]
+root          75  0.0  0.0      0     0 ?        I<   Feb26   0:00 [md]
+root          76  0.0  0.0      0     0 ?        I<   Feb26   0:00 [edac-poller]
+root          77  0.0  0.0      0     0 ?        I<   Feb26   0:00 [devfreq_wq]
+root          78  0.0  0.0      0     0 ?        S    Feb26   0:00 [watchdogd]
+root          81  0.0  0.0      0     0 ?        S    Feb26   0:00 [kswapd0]
+root          82  0.0  0.0      0     0 ?        S    Feb26   0:00 [ecryptfs-kthrea]
+root          84  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kthrotld]
+root          85  0.0  0.0      0     0 ?        I<   Feb26   0:00 [acpi_thermal_pm]
+root          86  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_0]
+root          87  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_0]
+root          88  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_1]
+root          89  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_1]
+root          91  0.0  0.0      0     0 ?        I<   Feb26   0:00 [vfio-irqfd-clea]
+root          92  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ipv6_addrconf]
+root         102  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kstrp]
+root         105  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kworker/u3:0]
+root         118  0.0  0.0      0     0 ?        I<   Feb26   0:00 [charger_manager]
+root         160  0.0  0.0      0     0 ?        I<   Feb26   0:05 [kworker/0:1H-kblockd]
+root         161  0.0  0.0      0     0 ?        S    Feb26   0:00 [scsi_eh_2]
+root         162  0.0  0.0      0     0 ?        I<   Feb26   0:00 [scsi_tmf_2]
+root         165  0.0  0.0      0     0 ?        I<   Feb26   0:00 [cryptd]
+root         232  0.0  0.0      0     0 ?        I<   Feb26   0:00 [raid5wq]
+root         272  0.0  0.0      0     0 ?        S    Feb26   0:02 [jbd2/sda1-8]
+root         273  0.0  0.0      0     0 ?        I<   Feb26   0:00 [ext4-rsv-conver]
+root         345  0.0  1.1 183016 183004 ?       S<s  Feb26   0:06 /lib/systemd/systemd-journald
+root         377  0.0  0.1  18976 18964 ?        Ss   Feb26   0:05 /lib/systemd/systemd-udevd
+root         476  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kaluad]
+root         477  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_rdacd]
+root         478  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpathd]
+root         479  0.0  0.0      0     0 ?        I<   Feb26   0:00 [kmpath_handlerd]
+root         480  0.0  1.7 280200 279648 ?       SLsl Feb26   1:15 /sbin/multipathd -d -s
+root         491  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop0]
+root         494  0.0  0.0      0     0 ?        S<   Feb26   0:00 [loop2]
+systemd+     515  0.0  0.5  90232 90144 ?        Ssl  Feb26   0:02 /lib/systemd/systemd-timesyncd
+systemd+     595  0.0  0.1  23900 23780 ?        Ss   Feb26   0:02 /lib/systemd/systemd-resolved
+root         706  0.0  1.4 241168 240992 ?       Ssl  Feb26   0:22 /usr/lib/accountsservice/accounts-daemon
+message+     714  0.0  0.0   8012  8000 ?        Ss   Feb26   0:04 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         720  0.0  0.1  29196 29156 ?        Ss   Feb26   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       723  0.0  1.3 224348 219996 ?       Ssl  Feb26   0:01 /usr/sbin/rsyslogd -n -iNONE
+root         725  0.0  0.1  18056 18044 ?        Ss   Feb26   0:04 /lib/systemd/systemd-logind
+root         727  0.0  2.3 394920 392824 ?       Ssl  Feb26   0:01 /usr/lib/udisks2/udisksd
+daemon       728  0.0  0.0   3792  3772 ?        Ss   Feb26   0:00 /usr/sbin/atd -f
+root         771  0.0  0.0   7352  7296 ttyS0    Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root         775  0.0  0.0   5828  5768 tty1     Ss+  Feb26   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         789  0.0  0.6 108108 107952 ?       Ssl  Feb26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+p.dalton    3025  0.0  0.1  18408 18352 ?        Ss   Feb26   0:00 /lib/systemd/systemd --user
+p.dalton    3027  0.0  0.6 104268 104256 ?       S    Feb26   0:00 (sd-pam)
+p.dalton    3138  0.0  0.0 1003532 4892 ?        Ssl  Feb26   0:01 [go-daemon sample]
+root        3363  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_system_task]
+root        3364  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_delay_taskq]
+root        3365  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_dynamic_tas]
+root        3366  0.0  0.0      0     0 ?        S<   Feb26   0:00 [spl_kmem_cache]
+root        3395  0.0  0.0      0     0 ?        S<   Feb26   0:00 [zvol]
+root        3396  0.0  0.0      0     0 ?        S    Feb26   0:00 [arc_prune]
+root        3397  0.0  0.0      0     0 ?        SN   Feb26   0:00 [zthr_procedure]
+root        3398  0.0  0.0      0     0 ?        SN   Feb26   0:24 [zthr_procedure]
+root        3399  0.0  0.0      0     0 ?        S    Feb26   0:00 [dbu_evict]
+root        3400  0.0  0.0      0     0 ?        SN   Feb26   0:23 [dbuf_evict]
+root        3401  0.0  0.0      0     0 ?        SN   Feb26   0:00 [z_vdev_file]
+root        3402  0.0  0.0      0     0 ?        S    Feb26   0:18 [l2arc_feed]
+ubuntu     15253  0.0  0.1  18412 18368 ?        Ss   Feb27   0:00 /lib/systemd/systemd --user
+ubuntu     15261  0.0  0.6 104268 104256 ?       S    Feb27   0:00 (sd-pam)
+root       15949  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop3]
+root       16031  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop4]
+root       16271  0.0  0.0      0     0 ?        S<   Feb27   0:00 [loop5]
+root       23279  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfsalloc]
+root       23280  0.0  0.0      0     0 ?        I<   Feb28   0:00 [xfs_mru_cache]
+uuidd      24811  0.0  0.0   9748  9664 ?        Ss   Feb28   0:00 /usr/sbin/uuidd --socket-activation
+root       25680  0.0  0.2 742332 48468 ?        Ssl  Feb28   1:02 /usr/lib/snapd/snapd
+root       34879  0.0  1.4 238704 238556 ?       Ssl  Mar02   0:00 /usr/lib/policykit-1/polkitd --no-debug
+systemd+   36633  0.0  0.1  26576 26424 ?        Ss   Mar02   0:05 /lib/systemd/systemd-networkd
+root       38803  0.0  0.2  40876 40788 ?        Ss   Mar02   0:00 /usr/sbin/oddjobd -n -p /var/run/oddjobd.pid -t 300
+root       40152  0.0  2.0 373216 343416 ?       Sl   Mar02   0:00 /opt/pbis/sbin/lwsmd --start-as-daemon
+root       40160  0.0  3.4 595008 558028 ?       Sl   Mar02   1:17 lw-container lwreg
+root       40188  0.0  1.7 328824 294904 ?       Sl   Mar02   0:00 lw-container eventlog
+root       40200  0.0  2.9 521928 491088 ?       Sl   Mar02   0:09 lw-container netlogon
+root       40210  0.0  3.4 598840 557956 ?       Sl   Mar02   0:00 lw-container lwio
+root       40223  0.0  4.7 836452 781836 ?       Sl   Mar02   2:07 lw-container lsass
+root       40237  0.0  2.1 395216 360272 ?       Sl   Mar02   0:00 lw-container reapsysl
+root       40406  0.0  0.0   8536  8524 ?        Ss   Mar02   0:01 /usr/sbin/cron -f
+root       40420  0.0  0.0  12176 12164 ?        Ss   Mar02   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root       83827  0.0  0.0  24676 15728 ?        Ss   Mar05   0:00 sshd: ubuntu [priv]
+ubuntu     83939  0.0  0.0  24932 16004 ?        S    Mar05   0:00 sshd: ubuntu@pts/1
+ubuntu     83940  0.0  0.0  10112 10100 pts/1    Ss+  Mar05   0:00 bash
+root      114316  0.0  0.0  24948 16000 ?        Ss   19:23   0:00 sshd: john.tiseo [priv]
+john.ti+  114389  0.0  0.0  24948 16008 ?        S    19:23   0:00 sshd: john.tiseo
+root      115169  0.0  0.0      0     0 ?        I    19:40   0:00 [kworker/0:1-cgroup_destroy]
+root      116323  0.0  0.0      0     0 ?        I    20:19   0:02 [kworker/0:2-events]
+root      116849  0.0  0.0  24924 15968 ?        Ss   20:29   0:00 sshd: samuel.barrows [priv]
+samuel.+  116922  0.0  0.0  25172 16244 ?        S    20:29   0:00 sshd: samuel.barrows@notty
+samuel.+  116942  0.0  0.0  15844  7840 ?        Ss   20:29   0:00 /usr/lib/openssh/sftp-server
+root      119036  0.0  0.0  24952 15996 ?        Ss   21:04   0:00 sshd: john.tiseo [priv]
+john.ti+  119117  0.0  0.0  24952 15964 ?        S    21:04   0:00 sshd: john.tiseo@notty
+john.ti+  119118  0.0  0.0  15844  7836 ?        Ss   21:04   0:00 /usr/lib/openssh/sftp-server
+root      119524  0.0  0.0  24948 16000 ?        Ss   21:07   0:00 sshd: john.tiseo [priv]
+john.ti+  119619  0.0  0.0  24948 16020 ?        S    21:07   0:00 sshd: john.tiseo@notty
+root      120397  0.0  0.0      0     0 ?        I    21:15   0:00 [kworker/u2:0-events_freezable_power_]
+root      120470  0.0  0.0  24952 16004 ?        Ss   21:15   0:00 sshd: john.tiseo [priv]
+john.ti+  120543  0.0  0.0  24952 16024 ?        S    21:15   0:00 sshd: john.tiseo@notty
+root      120667  0.0  0.0  24948 15992 ?        Ss   21:17   0:00 sshd: john.tiseo [priv]
+john.ti+  120743  0.0  0.0  24948 16020 ?        S    21:17   0:00 sshd: john.tiseo@notty
+root      121708  0.0  0.0  24952 15996 ?        Ss   21:27   0:00 sshd: john.tiseo [priv]
+john.ti+  121826  0.0  0.0  24952 16024 ?        S    21:27   0:00 sshd: john.tiseo@notty
+root      121918  0.0  0.0  24948 16000 ?        Ss   21:35   0:00 sshd: john.tiseo [priv]
+john.ti+  121996  0.0  0.0  25092 16148 ?        S    21:35   0:00 sshd: john.tiseo@notty
+john.ti+  122011  0.0  0.0  15844  7788 ?        Ss   21:35   0:00 /usr/lib/openssh/sftp-server
+root      122124  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/u2:2-events_power_efficient]
+root      122135  0.0  0.0  24952 15996 ?        Ss   21:47   0:00 sshd: john.tiseo [priv]
+john.ti+  122214  0.0  0.0  25296 16336 ?        S    21:47   0:00 sshd: john.tiseo@notty
+john.ti+  122229  0.0  0.0  15844  7784 ?        Ss   21:48   0:00 /usr/lib/openssh/sftp-server
+root      122297  0.0  0.0  24948 16000 ?        Ss   22:01   0:00 sshd: john.tiseo [priv]
+john.ti+  122375  0.0  0.0  24948 16020 ?        S    22:01   0:00 sshd: john.tiseo@notty
+john.ti+  122390  0.0  0.0  15844  7784 ?        Ss   22:02   0:00 /usr/lib/openssh/sftp-server
+root      122497  0.0  0.0      0     0 ?        I    22:05   0:00 [kworker/u2:1-events_power_efficient]
+root      122733  0.0  0.0  24952 16004 ?        Ss   22:15   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  122811  0.0  0.1  28052 19124 ?        S    22:15   0:00 sshd: ciaran.byrne@notty
+ciaran.+  122812  0.0  0.0  15844  7832 ?        Ss   22:15   0:00 /usr/lib/openssh/sftp-server
+ciaran.+  122832  0.0  0.0  15844  7908 ?        Ss   22:16   0:00 /usr/lib/openssh/sftp-server
+ciaran.+  122851  0.0  0.0  15976  7880 ?        Ss   22:18   0:00 /usr/lib/openssh/sftp-server
+root      122983  0.0  0.0  24948 15996 ?        Ss   22:20   0:00 sshd: jack.leonard [priv]
+jack.le+  123061  0.2  0.0  25080 16152 ?        S    22:20   0:00 sshd: jack.leonard@notty
+jack.le+  123062  0.0  0.0  15844  7832 ?        Ss   22:20   0:00 /usr/lib/openssh/sftp-server
+root      123077  0.0  0.0  24936 16008 ?        Ss   22:23   0:00 sshd: ciaran.byrne [priv]
+ciaran.+  123159  0.0  0.0  24936 16008 ?        S    22:23   0:00 sshd: ciaran.byrne@pts/0
+ciaran.+  123160  0.0  0.0  20144 12236 pts/0    Ss+  22:23   0:00 -bash
+root      123178  0.1  0.0  24948 16000 ?        Ss   22:24   0:00 sshd: john.tiseo [priv]
+john.ti+  123254  1.1  0.0  24948 16020 ?        S    22:24   0:00 sshd: john.tiseo@notty
+john.ti+  123269  0.0  0.0  15844  6092 ?        Ss   22:24   0:00 /usr/lib/openssh/sftp-server
+root      123270  0.0  0.0  22220  6356 ?        Ss   22:24   0:00 sudo -S ps aux
+root      123271  0.0  0.0  20800  4976 ?        R    22:24   0:00 ps aux
+### END sudo -S ps aux ###
+
+### BEGIN sudo -S cp /var/log/auth.log . ###
+
+### END sudo -S cp /var/log/auth.log . ###
+
+### BEGIN sudo -S chmod +r auth.log ###
+
+### END sudo -S chmod +r auth.log ###
+
+### BEGIN dir /home/p.dalton/ ###
+
+aqwerpuqwerj  test-lk
+### END dir /home/p.dalton/ ###
+
